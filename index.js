@@ -14,7 +14,9 @@ class Tree {
     let searchNodes = [this.root];
 
     while (searchNodes.length > 0) {
-   
+      let currentNode = searchNodes.shift(); //take the first node from array
+
+    return null;
   }
 }
 
