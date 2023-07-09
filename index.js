@@ -10,7 +10,19 @@ class Tree {
     this.root = node;
   }
 
-  findNode(data) {}
+  findNode(data) {
+    let treeArr = [this.root];
+
+    while (treeArr.length > 0) {
+      let currentNode = treeArr.shift();
+      if (!currentNode) continue;
+
+      if (currentNode.data === data) return currentNode;
+
+      treeArr.push(...currentNode.children)
+    }
+    return null;
+  }
 }
 
 module.exports = { TreeNode, Tree };
