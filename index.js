@@ -19,7 +19,9 @@ class Tree {
         return currentNode; // finds node with data given, return this!
       } 
       //what about the children?
-   
+      if (currentNode.children.length > 0) {
+        searchNodes.push(...currentNode.children);
+    }
   }
     return null;
   }
