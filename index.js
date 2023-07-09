@@ -13,7 +13,8 @@ class Tree {
   findNode(data) {
     let searchNodes = [this.root];
 
-  
+    while (searchNodes.length > 0) {
+   
   }
 }
 
