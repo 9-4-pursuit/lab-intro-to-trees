@@ -11,6 +11,7 @@ class Tree {
   }
 
   findNode(data) {
+    
     let treeArr = [this.root];
 
     while (treeArr.length > 0) {
@@ -22,7 +23,7 @@ class Tree {
       treeArr.push(...currentNode.children)
     }
     return null;
-  }
-}
+  };
+};
 
 module.exports = { TreeNode, Tree };
