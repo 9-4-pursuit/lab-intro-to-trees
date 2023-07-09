@@ -35,25 +35,25 @@ class Tree {
   }
 }
 
-const nodeA = new TreeNode("A");
-const nodeB = new TreeNode("B");
-const nodeC = new TreeNode("C");
-const nodeD = new TreeNode("D");
-const nodeE = new TreeNode("E");
-const nodeF = new TreeNode("F");
-const nodeG = new TreeNode("G");
-const nodeH = new TreeNode("H");
+// const nodeA = new TreeNode("A");
+// const nodeB = new TreeNode("B");
+// const nodeC = new TreeNode("C");
+// const nodeD = new TreeNode("D");
+// const nodeE = new TreeNode("E");
+// const nodeF = new TreeNode("F");
+// const nodeG = new TreeNode("G");
+// const nodeH = new TreeNode("H");
 
-nodeA.children.push(nodeB, nodeC, nodeD);
-nodeB.children.push(nodeE);
-nodeC.children.push(nodeF);
-nodeD.children.push(nodeG);
-nodeG.children.push(nodeH);
+// nodeA.children.push(nodeB, nodeC, nodeD);
+// nodeB.children.push(nodeE);
+// nodeC.children.push(nodeF);
+// nodeD.children.push(nodeG);
+// nodeG.children.push(nodeH);
 
-const tree = new Tree(nodeA);
-console.log(tree.findNode("A")); // Output: TreeNode { data: 'A', children: [ [TreeNode], [TreeNode], [TreeNode] ] }
-console.log(tree.findNode("G")); 
-console.log(tree.findNode("Y")); 
+// const tree = new Tree(nodeA);
+// console.log(tree.findNode("A")); // Output: TreeNode { data: 'A', children: [ [TreeNode], [TreeNode], [TreeNode] ] }
+// console.log(tree.findNode("G")); 
+// console.log(tree.findNode("Y")); 
 
 
 module.exports = { TreeNode, Tree };
