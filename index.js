@@ -15,7 +15,12 @@ class Tree {
 
     while (searchNodes.length > 0) {
       let currentNode = searchNodes.shift(); //take the first node from array
-
+      if (currentNode.data === data) {
+        return currentNode; // finds node with data given, return this!
+      } 
+      //what about the children?
+   
+  }
     return null;
   }
 }
