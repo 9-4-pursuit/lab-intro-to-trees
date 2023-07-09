@@ -10,7 +10,11 @@ class Tree {
     this.root = node;
   }
 
-  findNode(data) {}
+  findNode(data) {
+    if (this.root.data === data) return this.root;
+
+    return null;
+  }
 }
 
 module.exports = { TreeNode, Tree };
