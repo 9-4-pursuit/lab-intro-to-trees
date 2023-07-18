@@ -23,7 +23,6 @@ class Tree {
       }
 
       queue.push(...currentNode.children)
-      // queue.push(currentNode.children[0], currentNode.children[1])
     }
     return null
   }
