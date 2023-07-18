@@ -18,7 +18,6 @@ class Tree {
       if (currentNode === undefined) continue
 
       if (currentNode.data === data) {
-        console.log('currentNode:', currentNode, 'data:', data)
         return currentNode
       }
 
